@@ -3,9 +3,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      fredoka: ['Fredoka', 'sans-serif']
+      fredoka: ['Fredoka', 'sans-serif'],
+      oswald: ['Oswald', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      colors: {
+        'card-black':'#0b0b0e',
+      }
+    },
   },
   plugins: [],
 };
