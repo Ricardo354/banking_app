@@ -30,9 +30,9 @@ const Navbar = () => {
                 <div className="gap-y-6 flex flex-col mt-[23%]">
                     {menuItems.map((item) => (
                         <>
-                            <div className="flex flex-row cursor-pointer flex mr-20 ml-10">
+                            <div className="flex flex-row cursor-pointer flex mr-20 ml-10" onClick={() => setSelected(item.Nome)}>
                                 <item.Icon className={`w-8 h-14 ${selected === item.Nome ? "fill-white" : "fill-zinc-600"}`} />
-                                <h1 className={`ml-2 mt-4 text-xl ${selected === item.Nome ? "text-white" : "text-zinc-600"}`} onClick={() => setSelected(item.Nome)}>
+                                <h1 className={`ml-2 mt-4 text-xl ${selected === item.Nome ? "text-white" : "text-zinc-600"}`}>
                                     {item.Nome}
                                 </h1>
                                 {selected === item.Nome && (
