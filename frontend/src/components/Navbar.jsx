@@ -8,9 +8,8 @@ const menuItems = [
 
     { Nome: "Home", Icon: HomeIcon },
     { Nome: "Transactions", Icon: TransactionIcon },
-    { Nome: "Cards", Icon: creditCardIcon },
     { Nome: "Payments", Icon: paymentsIcon },
-    { Nome: "Recipients", Icon: recipientIcon },
+    { Nome: "Account", Icon: recipientIcon },
     { Nome: "Settings", Icon: settingsIcon }
 ]
 
@@ -20,7 +19,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex flex-col items-center bg-zinc-900 min-h-screen max-w-[15%] gap-x-3 border-r-2 border-zinc-800">
+            <div className="flex flex-col items-center bg-zinc-900 h-screen max-w-[15%] gap-x-3 border-r-2 border-zinc-800">
                 <div className="mt-3 gap-x-1 flex flex-row mr-6">
                     <img src={walletIcon} alt="wallet_icon" className="w-12 h-12 my-5" />
                     <h1 className="py-[19%] text-blue-500 font-fredoka text-2xl">
