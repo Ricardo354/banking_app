@@ -4,7 +4,9 @@ import { LtIcon, GtIcon, AddIcon } from "../components/Icons";
 
 // add brilho nas setinha
 //add bolinhas no card
-// bigger width   
+//fazer a progression bar no my savings
+//era bom componentizar o My Card, Recent transactions, etc
+
 const Home = () => {
 
     const mockTransaction = [
