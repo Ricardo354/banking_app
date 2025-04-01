@@ -4,7 +4,9 @@ export default {
   theme: {
     fontFamily: {
       fredoka: ['Fredoka', 'sans-serif'],
-      oswald: ['Oswald', 'sans-serif']
+      oswald: ['Oswald', 'sans-serif'],
+      ibm: ['IBM Plex Sans', 'sans-serif'],
+      raleway: ['Raleway', 'sans-serif']
     },
     extend: {
       colors: {
