@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex flex-col items-center bg-gradient-to-b from-zinc-900 via-black to-black  h-screen max-w-[15%] gap-x-3 border-r-2 border-zinc-800">
+            <div className="flex flex-col items-center bg-gradient-to-b from-zinc-900 via-black to-black max-w-[15%] gap-x-3 border-r-2 border-zinc-800">
                 <div className="mt-3 gap-x-1 flex flex-row mr-6">
                     <img src={walletIcon} alt="wallet_icon" className="w-12 h-12 my-5" />
                     <h1 className="py-[19%] text-blue-500 font-fredoka text-2xl">
