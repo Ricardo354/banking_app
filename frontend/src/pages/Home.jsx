@@ -2,7 +2,9 @@ import Navbar from "../components/Navbar";
 import { LtIcon, GtIcon, AddIcon } from "../components/Icons";
 
 
-// add brilho nas setinha   
+// add brilho nas setinha
+//add bolinhas no card
+// bigger width   
 const Home = () => {
 
     const mockTransaction = [
@@ -13,10 +15,10 @@ const Home = () => {
 
     return (
         <>
-            <div className=" min-h-[calc(100vh+100px)] flex flex-row bg-zinc-800 bg-zinc-950">
+            <div className=" min-h-[calc(100vh+170px)] flex flex-row bg-zinc-800 bg-zinc-950">
                 <Navbar />
                 <div className="flex flex-col w-screen">
-                    <div className="mt-3 ml-10 rounded-l-3xl bg-card-black w-[33%] h-[37%]">
+                    <div className="mt-5 ml-20 rounded-l-3xl bg-card-black w-[40%] h-[37%]">
                         <h1 className="whitespace-nowrap ml-3 font-oswald text-white flex  items-center text-3xl p-8">
                             My card
                             <button className="mt-[1%] bg-zinc-950 rounded-full w-7 ml-3 h-7">
@@ -27,7 +29,7 @@ const Home = () => {
                             </button>
 
 
-                            <div className="ml-[41%] flex items-center cursor-pointer ">
+                            <div className="ml-[49%] flex items-center cursor-pointer ">
                                 <button className="mt-1 bg-zinc-950 rounded-full w-8 h-8 flex items-center justify-center">
                                     <AddIcon className="w-6 stroke-neutral-600" />
                                 </button>
@@ -58,7 +60,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className=" mt-1 ml-12 rounded-3xl w-[33%] ">
+                    <div className="mt-5 ml-20 rounded-3xl w-[40%] ">
                         <h1 className="whitespace-nowrap font-oswald text-white flex flex-row  text-3xl p-5 ml-2">
                             Recent Transactions
                             <button className="relative transition-all duration-300transition-all duration-300
@@ -67,7 +69,7 @@ const Home = () => {
     hover:before:opacity-50 hover:text-blue-300
     before:content-[''] before:absolute before:inset-0 before:rounded-md before:blur-md before:opacity-0
     before:transition-opacity before:duration-300 before:bg-blue-500
-    hover:before:opacity-50 hover:text-blue-300 font-raleway mt-[1%] ml-[40%] text-xl text-blue-500">
+    hover:before:opacity-50 hover:text-blue-300 font-raleway mt-[1%] ml-[50%] text-xl text-blue-500">
                                 See All
                             </button>
                         </h1>
@@ -75,7 +77,7 @@ const Home = () => {
                         <div className="flex flex-col gap-y-3 ">
                             {mockTransaction.map((transaction) =>
 
-                                <div className="flex justify-between text-white w-[90%] h-14 ml-[6%]">
+                                <div className="flex justify-between text-white w-[80%] h-14 ml-[5%]">
                                     <div className="border border-zinc-900 rounded-xl w-[11%] h-30">
                                     </div>
 
@@ -84,8 +86,9 @@ const Home = () => {
                                         <p className="ml-[1%] text-sm">{transaction.Category}</p>
                                     </h1>
 
-                                    <h1 className="font-oswald ml-[30%] mr-3 mt-2 text-md text-white">
-                                        {transaction.Category === "Transfer" ? "-" : "+"} R$ {transaction.Price.toFixed(2)}
+                                    <h1 className="-mr-14  font-oswald mt-2 text-md text-white">
+                                        {transaction.Category === "Transfer" ? "-" : "+"} R$
+                                        {transaction.Price.toFixed(2)}
                                     </h1>
 
                                 </div>
@@ -94,7 +97,7 @@ const Home = () => {
 
 
                     </div>
-                    <div className="mt-1 p-5  ml-10 rounded-l-3xl w-[33%] h-[37%]">
+                    <div className="py-12 p-5  ml-20 rounded-l-3xl w-[40%] h-[37%]">
                         <h1 className="whitespace-nowrap font-oswald text-white flex flex-row  text-3xl p-3 ml-1">
                             My Savings
                             <button className="relative transition-all duration-300transition-all duration-300
@@ -103,19 +106,28 @@ const Home = () => {
     hover:before:opacity-50 hover:text-blue-300
     before:content-[''] before:absolute before:inset-0 before:rounded-md before:blur-md before:opacity-0
     before:transition-opacity before:duration-300 before:bg-blue-500
-    hover:before:opacity-50 hover:text-blue-300 font-raleway mt-[1%] ml-[64%] text-xl text-blue-500">
+    hover:before:opacity-50 hover:text-blue-300 font-raleway mt-[1%] ml-[68%] text-xl text-blue-500">
                                 See All
                             </button>
                         </h1>
-                        <div className="ml-3 flex flex-col ">
-                            <div className="rounded-lg mt-4 bg-gray-500 h-32">
-                                a
-                            </div>
-                            <div className="rounded-lg mt-4 bg-gray-500 h-32">
-                                a
+                        <div className="w-[90%] ml-8 flex flex-col ">
+                            <div className="p-7  justify-center flex flex-col rounded-lg mt-2 bg-card-black h-32">
+                                <div className="-mt-6 flex flex-row items-center">
+                                    <div className="bg-zinc-950 flex items-center justify-center w-12 h-12  border border-zinc-900 rounded-lg ">
+                                        🖥️
+                                    </div>
+                                    <h1 className="text-white font-oswald ml-4 text-xl truncate">
+                                        My Dream PC
+                                    </h1>
+                                    <button className="absolute ml-[25%] bg-zinc-950 rounded-full w-6 h-7">
+                                        <GtIcon className="w-6 fill-neutral-600" />
+                                    </button>
+                                </div>
+
                             </div>
                             
-                         
+
+
                         </div>
 
                     </div>

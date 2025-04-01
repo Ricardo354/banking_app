@@ -1,13 +1,13 @@
 import { useState } from "react";
 import walletIcon from "../assets/wallet.png";
-import { HomeIcon, TransactionIcon, creditCardIcon, paymentsIcon, recipientIcon, settingsIcon } from "./Icons";
+import { HomeIcon, TransactionIcon, savingsIcon, recipientIcon, settingsIcon } from "./Icons";
 
 
 const menuItems = [
 
     { Nome: "Home", Icon: HomeIcon },
     { Nome: "Transactions", Icon: TransactionIcon },
-    { Nome: "Payments", Icon: paymentsIcon },
+    { Nome: "Savings", Icon: savingsIcon },
     { Nome: "Account", Icon: recipientIcon },
     { Nome: "Settings", Icon: settingsIcon }
 ]
